@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html style="background-color: #5c53a6;">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -9,258 +8,425 @@
     <title>NextGen Courses</title>
 </head>
 <body>
-        
+
+
+
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top" data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg Nav-Color shadow-sm sticky-top">
         <div class="container">
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                <span class="fs-6 d-lg-none" href="#">MyCourse</span>
             </button>
-            <a class="navbar-brand fw-bold text-start d-none d-lg-block" href="#">MyCourse</a>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <!-- Name Brand -->
+            <a class="navbar-brand fw-bold text-start d-none d-lg-block" href="About-Us.html">
+                <img src="images/NextGen-Logo.png" alt="" style="width: auto; height: 50px;">
+            </a>
+            <!-- **Name Brand** -->
+            <!-- Navbar Menus -->
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <!-- Center Menus -->
+                <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link nav-active" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item nav-non-active">
+                        <a class="nav-link" href="About-Us.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item nav-non-active">
+                        <a class="nav-link" href="Facility.html">Fasilitas</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Courses</a>
+                        <a class="nav-link dropdown-toggle nav-non-active" href="#" role="button" data-bs-toggle="dropdown">Kursus</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item border-bottom" href="#">Computer Training</a></li>
-                            <li><a class="dropdown-item border-bottom" href="#">Mandarin Learning</a></li>
-                            <li><a class="dropdown-item border-bottom" href="#">Reguler Course</a></li>
-                            <li><a class="dropdown-item" href="#">Private Course</a></li>
+                            <li>
+                                <a class="dropdown-item border-bottom nav-non-active" href="Programs/Computer-Training.html">Pelatihan Komputer</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item border-bottom nav-non-active" href="Programs/Mandarin-Learning.html">Belajar Bahasa Mandarin</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item nav-non-active" href="Programs/Bimbingan-Belajar.html">Bimbingan Belajar</a>
+                            </li>
                         </ul>
                     </li>
-                    <li class="nav-item me-5"><a class="nav-link" href="#">About</a></li>
-                    <!-- <li class="nav-item ms-3 d-flex align-items-center">
-                        <img class="rounded-circle Insmalled-img" src="images/fix.jpg" alt="">
-                        <button class="btn btn-primary ms-2 rounded-pill Insmalled-btn" >JOIN US</button>
-                    </li> -->
+                    <li class="nav-item nav-non-active">
+                        <a class="nav-link" href="Gallery.html">Galeri</a>
+                    </li>
+                    <li class="nav-item nav-non-active">
+                        <a class="nav-link" href="Mentors.html">Mentors</a>
+                    </li>
                 </ul>
+                <!-- **Center Menus** -->
+                <!-- Right Side Menu -->
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="https://api.whatsapp.com/send/?phone=6285351282126&text&type=phone_number&app_absent=0&utm_source=ig">
+                            <button type="button" class="btn px-4" style="background: linear-gradient(to right, #F8C14D, #E77865 ); color: black; font-weight: 650;">Join Us Now</button>
+                        </a>
+                    </li>
+                </ul>
+                <!-- **Right Side Menu** -->
             </div>
+            <!-- **Navbar Menus** -->
         </div>
     </nav>
+    <!-- **NAVBAR** -->
+
+
 
     <!-- HERO -->
-    <section class="hero d-flex align-items-center text-start">
+    <section class="hero" id="Home">
         <div class="container">
-            <h1 class="fw-bold">Learn New Skills Online</h1>
-            <p class="lead">Join thousands of students worldwide</p>
-            <button class="btn btn-light btn-lg">Get Started</button>
-        </div>
-    </section>
-
-    <!-- CATEGORIES -->
-    <!-- <section class="container my-5">
-    <h2 class="text-center mb-4">Categories</h2>
-    <div class="row g-4 text-center">
-        <div class="col-md-3">
-        <div class="p-4 shadow rounded">
-            <i class="bi bi-code-slash fs-1 text-primary"></i>
-            <h5>Programming</h5>
-        </div>
-        </div>
-        <div class="col-md-3">
-        <div class="p-4 shadow rounded">
-            <i class="bi bi-palette fs-1 text-danger"></i>
-            <h5>Design</h5>
-        </div>
-        </div>
-        <div class="col-md-3">
-        <div class="p-4 shadow rounded">
-            <i class="bi bi-bar-chart fs-1 text-success"></i>
-            <h5>Business</h5>
-        </div>
-        </div>
-        <div class="col-md-3">
-        <div class="p-4 shadow rounded">
-            <i class="bi bi-camera-video fs-1 text-warning"></i>
-            <h5>Video</h5>
-        </div>
-        </div>
-    </div>
-    </section> -->
-
-    <!-- COURSES -->
-    <section class="Enllarged container my-5 ">
-    <h2 class="text-center mb-4 fs-1">Explore Our Courses</h2>
-    <div class="row g-4">
-
-        <div class="col-md-3">
-            <div class="card shadow-sm">
-                <img src="images/fix.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5>Computer Training</h5>
-                    <p></p>
-                    <button class="btn btn-outline-primary w-100"><a href="" class="text-decoration-none">View Course</a></button>
+            <div class="row align-items-center my-5">
+                <!-- Text -->
+                <div class="col-lg-6 text-white text-center text-lg-start">
+                    <div class="mb-3 modal-sm">
+                        <span class="px-3 pt-1 pb-2 rounded-4 fw-semibold fs-6" style="background-color: rgba(0, 0, 67, 0.75);">
+                            <small>🚀 Kelas Paling Dicari 2025</small>
+                        </span>
+                    </div>
+                    <h1 class="fw-bold">Pelajari Keterampilan Baru Secara Online & Offline dengan Mentor Kursus NextGen</h1>
+                    <p class="lead">Bergabunglah bersama kami dan ribuan siswa di seluruh dunia sekarang juga!</p>
+                    <a href="https://api.whatsapp.com/send/?phone=6285351282126&text&type=phone_number&app_absent=0&utm_source=ig">
+                        <button class="btn btn-light text-primary p-3 rounded-4 fw-semibold">Mulai Belajar Sekarang</button>
+                    </a>
                 </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card shadow-sm">
-                <img src="images/fix.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5>Mandarin Learning</h5>
-                    <p></p>
-                    <button class="btn btn-outline-primary w-100"><a href="" class="text-decoration-none">View Course</a></button>
+                <!-- **Text** -->
+                <!-- Image -->
+                <div class="col-lg-6 text-center mt-4 mt-lg-0 ">
+                    <img src="images/Description-Img.png" class="img-fluid hero-img rounded-4" alt="Hero Image">
                 </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card shadow-sm">
-                <img src="images/fix.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5>Reguler Course</h5>
-                    <p></p>
-                    <button class="btn btn-outline-primary w-100"><a href="" class="text-decoration-none">View Course</a></button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card shadow-sm">
-                <img src="images/fix.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5>Private Course</h5>
-                    <p></p>
-                    <button class="btn btn-outline-primary w-100"><a href="" class="text-decoration-none">View Course</a></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-    
-    <!-- TESTIMONIALS -->
-    <section class="bg-light py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">What Customers Say</h2>
-            <div class="row">
-            <div class="col-md-4">
-                <p>"A comfortable tutoring place. The tutors are kid-friendly and can adapt to the child's condition or learning at school. Private and semi-private lessons are also available👍 …"</p>
-                <strong>- Local Guide, astrie indah Lestari</strong>
-            </div>
-            <div class="col-md-4">
-                <p>"A newly opened course and tutoring center near Fedora Graha Raya. The place is comfortable, the instructors/tutors are friendly, and the customer service team knows what to ask."</p>
-                <strong>- Local Guide, Effendi - </strong>
-            </div>
-            <div class="col-md-4">
-                <p>"The lessons are good, the teachers are all good"</p>
-                <strong>- Local Guide, Ira Octaviantie iskandar</strong>
-            </div>
+                <!-- **Image** -->
             </div>
         </div>
     </section>
+    <!-- **HERO** -->
 
-    <!-- Promotion -->
+
+
+    <!-- Description -->
     <section class="Enllarged container my-5">
         <div class="row align-items-center g-5">
+            <div class="col-md-6">
+                <!-- Teks -->
+                <h2 class="fs-1 fw-bold">Tentang Kursus NextGen</h2>
+                <br>
+                <p class="text-muted fs-6">
+                    Kursus NextGen adalah lembaga pendidikan modern yang berfokus pada pengembangan keterampilan digital dan bahasa untuk generasi masa depan.
+                    <br> <br>
+                    Dengan pengalaman lebih dari 5 tahun, kami telah membantu ribuan siswa mencapai tujuan karir mereka melalui program pelatihan berkualitas tinggi yang dipandu oleh instruktur berpengalaman.
+                    <br> <br>
+                    Kami menyediakan berbagai program mulai dari Pelatihan Komputer, Belajar Bahasa Mandarin, hingga Bimbingan Belajar dengan metode pembelajaran yang interaktif dan praktis.
+                </p>
+                <!-- **Teks** -->
+                <!-- Button -->
+                <div class="text-center pt-3">
+                    <a href="About-Us.html">
+                        <button class="btn border border-dark border-opacity-75 border-2 rounded-pill btn-lg des-btn text-center fw-semibold">Pelajari Lebih Lanjut</button>
+                    </a>
+                </div>
+                <!-- **Button** -->
+            </div>
             <!-- Image -->
              <div class="col-md-6">
                 <div class="image-box">
-                    <!-- <img src="images/NextGenCourse.png" class="small-img"> -->
                     <img src="images/NextGenCourse.png" class="rounded main-img" alt="">
                 </div>
             </div>
-             <!-- Teks -->
-            <div class="col-md-6">
-                <h2 class="fs-1 fw-bold" style="color: #FF732E;">Growth Skill With N<strong style="color: #FFC200;">ext</strong>Gen Academy & Accelerate to <br>your Better future</h2>
-                <p class="text-muted fs-6">
-                    Explore our transformative journey of learning with expert mentors
-                    and modern digital skills for your future career.
-                </p>
+            <!-- **Image** -->
+        </div>
+    </section>
+    <!-- **Description** -->
+
+
+
+    <!-- TESTIMONIALS -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-1 fw-bold">Apa Kata Pelanggan?</h2>
+            <p class="mb-4 mt-0">Berikut kata mereka tentang Kursus NextGen</p>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- INDICATORS -->
+                <div class="carousel-indicators">
+                    <button data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                    <button data-bs-target="#testimonialCarousel" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- CARD 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="text-start">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </h5>
+                                        <p class="text-start pt-2 pb-2">
+                                            "A comfortable tutoring place. The tutors are kid-friendly and can adapt to the child's condition."
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-end">
+                                            <a href="https://www.google.com/maps/contrib/103616821135953609129/reviews?hl=en-GB" class="btn btn-outline-primary btn-sm">Lihat</a>
+                                            <div class="text-end">
+                                                <span class="badge text-bg-secondary" style="font-size:0.6rem;">Local Guide</span><br>
+                                                <strong>astrie indah Lestari</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="text-start">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </h5>
+                                        <p class="text-start pt-2 pb-2">
+                                            "A newly opened course and tutoring center near Fedora Graha Raya."
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-end">
+
+                                            <a href="https://www.google.com/maps/contrib/110953345616781678577/reviews?hl=en-GB" class="btn btn-outline-primary btn-sm">Lihat</a>
+                                            <div class="text-end">
+                                                <span class="badge text-bg-secondary" style="font-size:0.6rem;">Local Guide</span><br>
+                                                <strong>Effendi</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="text-start">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </h5>
+                                        <p class="text-start pt-2 pb-2">
+                                            "The lessons are good, the teachers are all good."
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-end">
+
+                                            <a href="https://www.google.com/maps/contrib/115409567667318382336/reviews?hl=en-GB" class="btn btn-outline-primary btn-sm">Lihat</a>
+                                            <div class="text-end">
+                                                <span class="badge text-bg-secondary" style="font-size:0.6rem;">Local Guide</span><br>
+                                                <strong>Ira Octaviantie</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 4 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+
+                                        <h5 class="text-start">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </h5>
+                                        <p class="text-start pt-2 pb-2">
+                                            "Clean tutoring place, competent teachers, Success continues Nextgen!"
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-end">
+                                            <a href="https://www.google.com/maps/contrib/116717716567014456692/reviews/@-6.1811976,106.7349903,27744m/data=!3m2!1e3!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D" class="btn btn-outline-primary btn-sm">Lihat</a>
+                                            <div class="text-end">
+                                                <span class="badge text-bg-secondary" style="font-size:0.6rem;">Pelanggan</span><br>
+                                                <strong>gwen alicia</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ARROWS -->
+                <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
         </div>
     </section>
+
+
 
     <!-- FAQ -->
-    <section class="bg-light container py-5 my-5">
-        <div></div>
-        <h2 class="text-center mb-4">FAQ</h2>
-        <div class="accordion" id="faq">
-
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                        Where is the location?
-                    </button>
-                </h2>
-                <div id="faq1" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        Komplek Ruko Orlin Arcade 2 Blok JB No. 31 Boulevard Graha Raya BIntaro Paku Jaya, Serpong Utara, Tangerang Selatan, Banten 15324
-                    </div>
+    <section class="faq-section">
+        <!-- Header FAQ -->
+        <h2 class="fw-bold">Pertanyaan yang Sering Diajukan?</h2>
+        <p>Berikut Pertanyaan mereka seputar program kami</p>
+        <!-- **Header FAQ** -->
+            <div class="faq-wrapper">
+                <!-- prev button -->
+                <button class="nav-btn left" onclick="prevFAQ()">&#10094;</button>
+                <!-- **prev button** -->
+                <!-- card -->
+                <div class="faq-card">
+                    <span id="counter" class="counter">1 / 6</span>
+                    <h3 id="question"></h3> <!-- Question is in JS -->
+                    <p class="faq-answer" id="answer"></p> <!-- Answer is in JS -->
                 </div>
+                <!-- **card** -->
+                <!-- next button -->
+                <button class="nav-btn right" onclick="nextFAQ()">&#10095;</button>
+                <!-- **next button** -->
             </div>
+        <!-- dots -->
+        <div class="dots" id="dots"></div>
+        <!-- **dots** -->
+    </section>
+    <!-- FAQ -->
 
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
-                        What are the limit age for each courses?
-                    </button>
-                </h2>
-                <div id="faq2" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        Reguler Course :
-                        <ul>
-                            <li>TK</li>
-                            <li>SD</li>
-                            <li>SMP</li>
-                            <li>SMA</li>
-                        </ul>
-                        Private Course :
-                        <ul>
-                            <li>TK</li>
-                            <li>SD</li>
-                            <li>SMP</li>
-                            <li>SMA</li>
-                        </ul>
-                        Mandarin Learning :
-                        <ul>
-                            <li> ... </li>
-                        </ul>
-                        Computer Training :
-                        <ul>
-                            <li> All Ages </li>
-                        </ul>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container py-5">
+            <div class="row px-5 mx-5">
+                <!-- About Us -->
+                <div class="col-md-3 mb-4 pe-5 ps-0">
+                    <h4 class="fw-bold text-white">Kursus NextGen</h4>
+                     <p class="text-light mt-3"> 
+                        Kursus NextGen adalah lembaga pendidikan modern yang berfokus pada pengembangan keterampilan digital dan bahasa untuk generasi masa depan.
+                    </p>
+                </div>
+                <!-- **About Us** -->
+                <!-- Programs -->
+                <div class="col-md-3 mb-4 ps-0 pe-0">
+                    <h3 class="fw-bold text-white">Kursus</h3>
+                    <ul class="list-unstyled mt-3">
+                        <li>
+                            <a href="Programs/Computer-Training.html" class="footer-link">Pelatihan Komputer</a>
+                        </li>
+                        <li>
+                            <a href="Programs/Mandarin-Learning.html" class="footer-link">Belajar Bahasa Mandarin</a>
+                        </li>
+                        <li>
+                            <a href="Programs/Bimbingan-Belajar.html" class="footer-link">Bimbingan Belajar</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- **Programs** -->
+                <!-- Lainnya -->
+                <div class="col-md-3 mb-4 ps-0 pe-0">
+                    <h3 class="fw-bold text-white">Lainnya</h3>
+                    <ul class="list-unstyled mt-3">
+                        <li>
+                            <a href="About-Us.html" class="footer-link">Tentang Kami</a>
+                        </li>
+                        <li>
+                            <a href="Facility.html" class="footer-link">Fasilitas</a>
+                        </li>
+                        <li>
+                            <a href="Gallery.html" class="footer-link">Galeri</a>
+                        </li>
+                        <li>
+                            <a href="Mentors.html" class="footer-link">Mentors</a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=6285351282126&text&type=phone_number&app_absent=0&utm_source=ig" class="footer-link">Join Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- **Lainnya** -->
+                <!-- Contact Us -->
+                <div class="col-md-3 mb-4 ps-0 pe-0">
+                    <h3 class="fw-bold text-white">Kontak</h3>
+                    <div class="d-flex text-light">
+                        <i class="bi bi-geo-alt-fill pe-2 mt-1"></i>
+                        <p>
+                            <a href="https://www.google.com/maps/place/NextGen+Course+(Bimbel+%26+Kursus+Komputer)/@-6.2363208,106.6760706,867m/data=!3m1!1e3!4m8!3m7!1s0x2e69fbaac118ba73:0x2213be58d9a5f2ea!8m2!3d-6.2363261!4d106.6786455!9m1!1b1!16s%2Fg%2F11w8l1_6dz?entry=ttu&g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D" class="footer-link-AboutUs">
+                                Komplek Ruko Orlin Arcade 2, JI. Boulevard Graha Raya No.31 Blok JB, Bintaro, Paku Jaya, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15324
+                            </a>
+                        </p>
+                    </div>
+                    <div class="d-flex text-light">
+                        <i class="bi bi-envelope-fill pe-2 mt-1"></i>
+                        <p>
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBpgXSHJhLScQhtVfMWHpSZHXPtvBHSHckdnTfZWqKKNbGQMNxtBTqpXlzPpnJQSTtgbkld" class="footer-link-AboutUs">
+                                nextgencourse@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                    <div class="d-flex text-light">
+                        <i class="bi bi-telephone-fill pe-2 mt-1"></i>
+                        <p>
+                            <a href="https://api.whatsapp.com/send/?phone=6285351282126&text&type=phone_number&app_absent=0&utm_source=ig" class="footer-link-AboutUs">
+                                0853-5128-2126
+                            </a>
+                        </p>
+                    </div>
+                    <div class="d-flex text-light">
+                        <i class="bi bi-instagram pe-2 mt-1"></i>
+                        <p>
+                            <a href="https://www.instagram.com/nextgencoursee/?hl=en" class="footer-link-AboutUs">
+                                @nextgencourse
+                            </a>
+                        </p>
                     </div>
                 </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
-                        What facility we give?
-                    </button>
-                </h2>
-                <div id="faq3" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        We offer these facilities :
-                        <ul>
-                            <li>Teaching Materials, Tools, and Learning Equipment</li>
-                            <li>Books & Learning Questions</li>
-                            <li>TV for Computer Training</li>
-                            <li>A Comfortable Classrooms</li>
-                            <li>A Professional, Communicative, and Friendly Tutors</li>
-                        </ul>
-                    </div>
-                </div>
+                <!-- **Contact Us** -->
             </div>
         </div>
-        
-    </section>
+    </footer>
+    <!-- Footer -->
 
 
     
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white p-4">
-    <div class="container text-center">
-        <p>&copy; 2026 NextGen Course. All rights reserved.</p>
-        <div>
-        <a href="https://www.instagram.com/nextgencoursee/?hl=en" class="text-decoration-none"><i class="bi bi-instagram mx-2">  nextgencoursee</i></a>
-        <a href="https://api.whatsapp.com/send/?phone=6285351282126&text&type=phone_number&app_absent=0&utm_source=ig" class="text-decoration-none"><i class="bi bi-whatsapp">   0853-5128-2126</i></a>
+    <!-- Copyright -->
+    <Section>
+        <div class="footer-bottom text-center py-3">
+            <p class="mb-0">© 2026 NextGen Course. All rights reserved.</p>
         </div>
+    </Section>
+    <!-- Copyright -->
+     
+
+
+    <!-- Scroll to Top Button -->
+    <div class="d-none d-md-block">
+        <button id="scrollTopBtn" class="border-4 bbfun" style="display: none;">
+            <img src="images/arrow-up.png" class="" width="30">
+        </button>
     </div>
-    </footer>
+    <!-- Scroll to Top Button -->
+
+    
+    
+<script src="js/Scroll.js"></script>
 <script src="js/Script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
